@@ -28,8 +28,8 @@ for item in time_text_list:
 #write list of time codes and text to a new file
 with open('new_text.txt','w') as new_file:
     for item in time_text_list:   
-'''Convert the timecode which displays a time span to a single time stamp. 
-Write only the first 8 digits of the time code; the milliseconds and second time stamp are removed.'''
+#Convert the timecode which displays a time span to a single time stamp. 
+#Write only the first 8 digits of the time code; the milliseconds and second time stamp are removed.
             new_file.write("%s" % item[0][:8])
             new_file.write("    %s\n" % item[1])
 with open('new_text.txt', 'r') as new_file:
